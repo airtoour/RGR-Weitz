@@ -1,0 +1,134 @@
+/* Стиль для заголовка */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    height: 1000px;
+}
+
+/* Стиль для Названия сайта */
+h2.title:before{
+    content: "";
+    position: absolute;
+    width: 1920px;
+    height: 5px;
+    background-color: #ffffff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2.title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 45px;
+    position: relative;
+}
+
+h2.title:after{
+    content: "";
+    position: absolute;
+    width: 1920px;
+    height: 5px;
+    background-color: #ffffff;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Общий стиль */
+* {
+    box-sizing: border-box;
+    background-color: #b17a5c;
+    text-align: center;
+    margin: 2;
+    padding: 2;
+}
+
+/* Картинки в слайдах */
+.mySlides {
+    display: none;
+}
+
+/* Кнопки вперед и назад */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 30px;
+    margin-top: -50px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 60px;
+    border-radius: 10px 10px 10px 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    display: none;
+}
+
+/* Выделение кнопок */
+.prev:hover,
+.next:hover {
+    background-color: #925a1d;
+}
+
+.column >  img{
+    height: 20%;
+}
+.column >  img:hover{
+    opacity: 0.6;
+}
+.next {
+    right: 0;
+    border-radius: 10px 10px 10px 10px;
+}
+.prev {
+    left: 0;
+}
+
+/* Нумерация картинок */
+.numbertext {
+    font-family: 'Monserrat', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/*кнопка начать и остановить*/
+button {
+    background-color: FFF;
+    font-size: 2em;
+    color: #ffffff;
+    border-radius: 2px;
+    display: none;
+    margin: 5px;
+}
+/* Колонка */
+.column {
+    float: left;
+    width: 20%;
+}
+/* Кнопка "Закрытие" */
+span {
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    cursor: pointer;
+    display: none;
+    float: right;
+}
+/* Ползунок */
+input[type=range] {
+    width: 200px;
+    height: 7px;
+    display: block;
+}
+
+.footer {
+    font-style: italic;
+    background-color: #6b4015;
+}
