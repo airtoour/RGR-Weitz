@@ -78,6 +78,7 @@ function closeSlide() {
     let slider = document.getElementById("r1");
     let start = document.getElementById("start");
     let stop = document.getElementById("stop");
+
 // убираем с экрана все ненужные элементы
     start.style.display = "none";
     stop.style.display = "none"
