@@ -1,3 +1,11 @@
+/* Общий стиль */
+*{
+    box-sizing: border-box;
+    background-color: #b17a5c;
+    text-align: center;
+    margin: 2;
+    padding: 2;
+}
 /* Стиль для заголовка */
 body {
     font-family: 'Montserrat', sans-serif;
@@ -35,15 +43,6 @@ h2.title:after{
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-}
-
-/* Общий стиль */
-* {
-    box-sizing: border-box;
-    background-color: #b17a5c;
-    text-align: center;
-    margin: 2;
-    padding: 2;
 }
 
 /* Картинки в слайдах */
@@ -108,11 +107,22 @@ button {
     display: none;
     margin: 5px;
 }
+
 /* Колонка */
+.column-item {
+    padding: 5px;
+    position: relative;
+}
+
+.column-item img{
+    margin:5px;
+}
+
 .column {
     float: left;
     width: 20%;
 }
+
 /* Кнопка "Закрытие" */
 span {
     color: rgb(255, 255, 255);
@@ -121,6 +131,7 @@ span {
     display: none;
     float: right;
 }
+
 /* Ползунок */
 input[type=range] {
     width: 200px;
@@ -131,4 +142,6 @@ input[type=range] {
 .footer {
     font-style: italic;
     background-color: #6b4015;
+    position: static;
+    bottom: 0;
 }

@@ -67,7 +67,6 @@ function showSlides(n) {
 
 }
 
-
 // закрытие слайда, возвращение к миниатюрам
 function closeSlide() { 
     let mini = document.getElementById("miniatures");
